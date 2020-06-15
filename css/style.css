@@ -1,0 +1,780 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+/* estilo geral do container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.container::before,
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* todos h2 do site */
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #385445;
+  margin-bottom: 30px;
+}
+h2::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  background-color: #be9e63;
+  display: block;
+  margin: 10px auto;
+}
+/* estilo padrão do botão */
+.btn {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  display: block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  margin-top: 130px;
+  background-color: #385445;
+  border: 1px solid #385445;
+  border-radius: 20px;
+  transition: all 0.5s ease-in;
+}
+.btn:hover {
+  background-color: #be9e63;
+  color: #385445;
+}
+/* estilos padrões */
+.conheca_me .chamada,
+.atendimento .chamada,
+.aten_info .chamada {
+  font-size: 0.75em;
+  font-style: italic;
+  margin-top: 30px;
+}
+.conheca_me .btn,
+.atendimento .btn,
+.aten_info .btn {
+  margin-top: 5px;
+}
+.banner {
+  height: 540px;
+  margin: 0 auto;
+  opacity: 0.8;
+  position: relative;
+  top: 80px;
+  margin-bottom: 80px;
+}
+/* topo do site */
+.topo {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 1;
+  box-shadow: 1px 1px 10px #ccc;
+}
+/* estilo da logo */
+.logo {
+  width: 200px;
+  margin-top: 10px;
+  float: left;
+}
+/* estilo do menu */
+.menu {
+  float: right;
+}
+.menu a {
+  display: inline-block;
+  padding: 5px 10px;
+  line-height: 60px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #385445;
+  transition: all 0.5s linear;
+}
+.menu a:hover {
+  color: #be9e63;
+}
+/* estilo do banner */
+.banner_inicio {
+  background: url("../img/banner.jpg") no-repeat top center;
+}
+.banner_inicio h3{
+  width: 700px;
+  margin: 0 auto;
+}
+
+.banner h3 {
+  padding-top: 150px;
+  font-size: 1.56em;
+  line-height: 1.5em;
+  text-align: center;
+  color: white;
+}
+.banner span {
+  display: block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 250px;
+  color: white;
+  font-size: 1em;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 4px;
+}
+/* estilo seção fisioterapia */
+.fisioterapia {
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+.fisioterapia p,
+.conheca_me p {
+  max-width: 860px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.125em;
+  letter-spacing: 1px;
+}
+/* estilo seção conheça-me */
+.conheca_me {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #f2f2f2;
+}
+
+/* estilo seção atendimento */
+.atendimento {
+  width: 100%;
+  padding: 60px 0;
+}
+.atendimento_item {
+  max-width: 300px;
+  margin: 0 10px;
+  float: left;
+}
+.atendimento_item img {
+  width: 100%;
+}
+.atendimento_item img:hover {
+  opacity: 0.5;
+}
+.atendimento_item h6 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 0.75em;
+  color: #be9e63;
+}
+.atendimento_item h6:hover {
+  color: #385445;
+}
+.atendimento .chamada {
+  text-align: center;
+}
+
+/* estilo da quebra da página */
+.quebra_pagina {
+  background: url("../img/quebra-de-pagina.jpg") no-repeat center center;
+  background-size: cover;
+}
+.quebra_pagina h3 {
+  width: 860px;
+  text-align: center;
+  font-size: 1.56em;
+  font-weight: bolder;
+  font-style: italic;
+  letter-spacing: 3px;
+  color: white;
+  margin: 0 auto;
+  padding: 90px;
+}
+.marcar_consulta {
+  width: 100%;
+  /* height: 290px; */
+  padding-bottom: 40px;
+  background: #f2f2f2;
+}
+.marcar_consulta h3 {
+  display: block;
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 60px;
+  font-size: 2.25em;
+  text-align: center;
+  color: #be9e63;
+}
+.marcar_consulta .btn {
+  margin-top: 20px;
+}
+
+/* estilo do rodape */
+.footer {
+  width: 100%;
+  /* height: 280px; */
+  padding-top: 60px;
+}
+.footer_item {
+  width: 300px;
+  margin: 0px 10px;
+  float: left;
+}
+.footer_item h3 {
+  color: #be9e63;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  border-left: 3px solid #385445;
+}
+.mapa_do_site a {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #385445;
+  transition: all 0.5s linear;
+}
+.mapa_do_site a:hover {
+  color: #be9e63;
+}
+.redes_sociais img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+.redes_sociais a:hover {
+  opacity: 0.5;
+  color: #be9e63;
+}
+.enderecos-item {
+  margin-bottom: 20px;
+}
+.enderecos-item p {
+  padding: 5px 0;
+  color: #385445;
+  font-size: 0.9em;
+}
+.copyright {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  margin: 20px auto 0 auto;
+  background-color: #385445;
+}
+.copyright p {
+  color: #be9e63;
+  font-size: 0.9em;
+  float: left;
+}
+.copyright span {
+  float: right;
+  font-size: 0.9em;
+  color: #be9e63;
+}
+.copyright a {
+  text-decoration: none;
+  color: #be9e63;
+  font-size: 1em;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 3px;
+  transition: all 0.5s linear;
+}
+.copyright span a:hover {
+  color: white;
+}
+
+/* página sobre */
+.banner_sobre {
+  height: 300px;
+  background: url("../img/banner-sobre.jpg") no-repeat center center;
+}
+.banner_sobre h2,
+.banner_atendimento h2,
+.banner_contato h2 {
+  color: white;
+  padding-top: 70px;
+  letter-spacing: 2px;
+  font-size: 2.5em;
+}
+.banner_sobre .titulo_pagina:after {
+  height: 0px;
+}
+.banner_sobre p,
+.banner_atendimento p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+.sobre {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.foto_pro {
+  max-width: 470px;
+  float: left;
+  margin-right: 20px;
+}
+.foto_pro img {
+  width: 400px;
+}
+.sobre_info {
+  width: 470px;
+  float: left;
+}
+.gessica_info {
+  margin-bottom: 30px;
+}
+.gessica_info p {
+  width: 470px;
+  text-align: center;
+  font-size: 1em;
+}
+.formacao_info {
+  width: 470px;
+}
+.formacao_info p {
+  padding: 5px 0;
+  font-size: 1em;
+  letter-spacing: 1px;
+  /* font-family: "Dancing Script", cursive; */
+}
+
+.fisio {
+  background-color: #385445;
+  padding: 90px 0;
+}
+.fisio h1 {
+  text-align: center;
+  font-size: 3.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #be9e63;
+}
+.fisio img {
+  width: 640px;
+  display: inline-block;
+  margin: -30px 160px;
+}
+.fisio_info {
+  width: 250px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+.fisio_info h3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #be9e63;
+  font-size: 1.125em;
+}
+.fisio_info p {
+  text-align: center;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #be9e63;
+}
+
+/* página atendimento */
+.banner_atendimento {
+  height: 300px;
+  background: url("../img/banner-atendimento.jpg") no-repeat center center;
+}
+.banner_atendimento .titulo_pagina:after {
+  height: 0;
+}
+.atendimentos {
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.aten_container {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.aten_container:hover {
+  box-shadow: 2px 2px 20px #be9e63;
+}
+.aten_img {
+  width: 430px;
+  margin-left: 10px;
+  float: left;
+}
+.aten_img img {
+  width: 400px;
+}
+.aten_info {
+  width: 470px;
+  float: left;
+}
+.aten_info p {
+  width: 430px;
+  text-align: center;
+  font-size: 0.9em;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+.aten_info .chamada {
+  color: #be9e63;
+  font-size: 0.9em;
+}
+
+/* pagina contatos */
+.banner_contato {
+  height: 300px;
+  background: url("../img/banner-contato.jpg") no-repeat center center;
+  background-size: cover;
+}
+.banner_contato .titulo_pagina:after {
+  height: 0;
+}
+.formulario {
+  /* width: 100%; */
+  padding: 60px 0;
+}
+.formulario form {
+  width: 440px;
+  font-size: 1.125em;
+  color: #385445;
+  float: left;
+  margin-right: 20px;
+}
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 440px;
+}
+.form_info {
+  width: 440px;
+  float: left;
+  margin: 15px 0;
+}
+.formulario label,
+.formulario input {
+  display: block;
+  outline: 0;
+}
+.form_info label {
+  margin-left: 8px;
+  font-weight: bold;
+}
+.form_info input {
+  padding: 8px;
+  border: 2px solid #be9e63;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-style: italic;
+}
+.formulario select {
+  display: inline-block;
+  padding: 8px;
+  border: 2px solid #be9e63;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-style: italic;
+}
+.form_info textarea {
+  height: 150px;
+  border: 2px solid #be9e63;
+  border-radius: 10px;
+  margin-top: 5px;
+  resize: none;
+  outline: 0;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-style: italic;
+}
+form .btn-form {
+  background-color: #be9e63;
+  border: none;
+  margin-left: 0;
+}
+
+/* informações de contato */
+.informacoes_contato,
+.locais_atendimento {
+  width: 400px;
+  margin-left: 100px;
+  padding-top: 10px;
+  float: left;
+}
+.contato_info {
+  width: 450px;
+  margin: 0 auto;
+}
+.contato_item {
+  margin-bottom: 20px;
+}
+.contato_item span {
+  float: right;
+  width: 410px;
+  line-height: 35px;
+  color: #385445;
+  font-size: 0.9em;
+  font-style: italic;
+}
+.contato_item span a{
+  color:#385445;
+  text-decoration: none;
+}
+.locais_atendimento h2 {
+  font-size: 1.125em;
+}
+.locais_atendimento h2::after {
+  height: 0;
+}
+.local {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.local h4 {
+  color: #385445;
+  font-size: 1.125em;
+  padding-bottom: 4px;
+}
+.local p {
+  color: #be9e63;
+  font-size: 0.9em;
+}
+.menu_mobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 320px;
+}
+.mm_mobile {
+  height: 3px;
+  background-color: #be9e63;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 976px) {
+  .container {
+    max-width: 768px;
+  }
+  .menu {
+    width: 400px;
+  }
+  .fisioterapia p,
+  .conheca_me p,
+  .quebra_pagina h3 {
+    width: 700px;
+  }
+  .atendimento_item {
+    width: 220px;
+    margin-left: 20px;
+  }
+  .quebra_pagina h3 {
+    font-size: 1.1em;
+  }
+  .footer_item {
+    width: 220px;
+    margin-left: 20px;
+  }
+  .copyright {
+    height: 85px;
+    line-height: 0;
+  }
+  .copyright p {
+    float: none;
+    display: block;
+    line-height: 40px;
+    padding-top: 8px;
+    text-align: center;
+  }
+  .copyright span {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+.container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+/* topo do site */
+  .topo {
+      top: 0;
+      margin: 0;
+      width: 400px;
+  }
+    .logo {
+      margin-left: 20px;
+      width: 140px;
+    }
+    .menu {
+      float: none;
+      width: 400px;
+    }
+   
+    .menu_mobile {
+      display: block;
+    }
+    .links {
+      display: none;
+    }
+    .menu a {
+      float: none;
+      width: 100%;
+      background-color: #385445;
+      color: #be9e63;
+    }
+    .menu a:hover {
+      color: #f2f2f2;
+    }
+/* topo do site */
+  .banner h3 {
+    font-size: 1.125em;
+    padding-top: 90px;
+  }
+  .banner span{
+    margin-right: 50px;
+  }
+  .banner_inicio {
+    width: 100%;
+    height: 400px;
+    top: 60px;
+    margin-bottom: 60px;
+  }
+  .fisioterapia p,
+  .conheca_me p {
+    width: 380px;
+    font-size: 0.8em;
+  }
+  .atendimento_item {
+    max-width: 400px;
+    width: 350px;
+    margin: 0 25px;
+  }
+  .quebra_pagina h3 {
+    width: 400px;
+    font-size: 0.7em;
+  }
+  .marcar_consulta h3 {
+    width: 400px;
+    font-size: 1.4em;
+  }
+  .footer_item {
+    width: 380px;
+    margin-bottom: 30px;
+  }
+
+  .copyright {
+    line-height: 0px;
+    text-align: center;
+  }
+  .copyright p {
+    font-size: 0.7em;
+    margin: 0;
+    float: none;
+    padding-top: 15px;
+  }
+  .copyright span {
+    font-size: 0.7em;
+    float: none;
+    display: block;
+    padding-top: 20px;
+  }
+
+/* pagina sobre */
+  .banner_sobre p {
+    font-size: 0.9em;
+  }
+  .foto_pro,
+  .sobre_info,
+  .formacao_info,
+  .aten_info {
+    max-width: 400px;
+    width: 400px;
+  }
+  .sobre_info p {
+    width: 380px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .fisio h1 {
+    font-size: 3em;
+  }
+  .fisio img {
+    display: none;
+  }
+  .fisio_info {
+    width: 350px;
+  }
+  .fisio_info h3 {
+    font-size: 1.7em;
+  }
+  .fisio_info p {
+    font-size: 1em;
+  }
+/* pagina atendimento */
+  .aten_img {
+    width: 370px;
+    margin-left: 0;
+  }
+  .aten_info {
+    width: 370px;
+    margin: 0 auto;
+  }
+  .aten_img img {
+    width: 370px;
+  }
+  .aten_info p {
+    width: 360px;
+  }
+/* pagina atendimento */
+  
+/* pagina contato */
+ .formulario form {
+   width: 360px;
+   margin: 0 auto;
+   float: none;
+ }
+ .form_info{
+   width: 360px;
+ 
+ }
+ .form_info input, .form_info select,.form_info textarea{
+   width: 360px;
+   margin: 0 auto;
+ }
+ .informacoes_contato{
+    width: 360px;
+    margin: 0 20px;
+ }
+ .contato_info {
+   width: 360px;
+ }
+ .contato_item span{
+   width: 300px;
+ }
+ .locais_atendimento {
+   margin-left: 0;
+ }
+ .banner_inicio h3{
+   width: 400px;
+ }
+}
